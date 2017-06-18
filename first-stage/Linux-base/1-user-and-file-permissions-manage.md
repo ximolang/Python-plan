@@ -78,3 +78,10 @@ ls -l
 所有者权限，这一点相信你应该明白了，至于所属用户组权限，是指你所在的用户组中的所有其它用户对于该文件的权限。
 
 文件大小：以 inode 结点大小为单位来表示的文件大小，可以给 ls 加上 -lh 参数来更直观的查看文件的大小。
+
+`ls -AsSh`以人类友好的方式显示所有文件，S为按大小排序。
+
+`sudo chown shiyanlou iphone6`改变iphone6这个文件的所有者为shiyanlou
+
+adduser 和 useradd 的区别是什么？
+useradd 只创建用户，创建完了用 passwd lilei 去设置新用户的密码。adduser 会创建用户，创建目录，创建密码（提示你设置），做这一系列的操作。其实 useradd、userdel 这类操作更像是一种命令，执行完了就返回。而 adduser 更像是一种程序，需要你输入、确定等一系列操作。
