@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
+import os
+
 # 空函数
 def nop():
     pass
@@ -22,3 +24,6 @@ print(results[0])
 
 print(power(10, 3))
 print(power(10))
+
+print('打印出文件列表：')
+print([d for d in os.listdir('.')])
